@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Layouts</title>
+
+
+<!--폰트 설정하기-->
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Dongle', sans-serif;
+        }
+
+
+        #header{
+            background-color: lightgray;
+            height: 100px;
+
+        }
+
+        #NAVIGATION{
+            background-color: #339999;
+            color: white;
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+
+        #SECTION{
+            width: calc(100% - 200PX);
+            text-align: left;
+            float: left;
+            padding: 10px;
+
+        }
+
+        #FOADER{
+        background-color: #FFCC00;
+        height: 100px;
+        clear: both;
+
+        }
+        #header #NAVIGATION  #SECTION #FOADER{ text-align: CENTER;}
+        #header #FOADER {line-height: 100PX;}
+        #NAVIGATION #SECTION {line-height: 240PX;}
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>div 요소를 이용한 레이아웃</h1>
+<div id="header">
+    <h2> HEADER 영역</h2>
+
+
+
+</div>
+<div id="NAVIGATION">
+    <h2>NAV영역</h2>
+
+</div>
+<div id="NAVIGATION">
+    <h2>NAV영역</h2>
+
+</div>
+<div id="SECTION">
+    <h2>SECTION 영역</h2>
+
+</div>
+<div id="FORDER">
+    <h2>FORDER 영역</h2>
+
+</div>
+
+
+    
+</body>
+</html>
