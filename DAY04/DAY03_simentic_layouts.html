@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 요소 - 레이아웃</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            font-family: 'Dongle', sans-serif;
+        }
+
+
+        header{
+            background-color: lightgray;
+            height: 100px;
+
+        }
+
+        
+
+        nav{
+            background-color: #339999;
+            color: white;
+            width: 200px;
+            height: 300px;
+            float: left;
+            
+        }
+
+        article{
+            float: left;
+            padding: 28px;
+            width :400px;
+
+
+        }
+        
+
+        section::after{
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+
+        
+
+        footer{
+        background-color: #FFCC00;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        }
+      @media screen and(max-width: 600px) {
+          nav,article{
+              width : 100%;
+              height : auto;
+          }
+      }
+        #header #NAVIGATION  #SECTION #FOADER{ text-align: CENTER;}
+        #header #FOADER {line-height: 100PX;}
+        #NAVIGATION #SECTION {line-height: 240PX;}
+    </style>
+
+
+
+</head>
+   <header>
+<h2>Header</h2>
+</header> 
+
+<section>
+    <nav>
+        <v1>
+            <li><a href="#">MENU 001</a></li>
+            <li><a href="#">MENU 002</a></li>
+            <li><a href="#">MENU 003</a></li>
+            <li><a href="#">MENU 004</a></li>
+            
+        </v1>
+    </nav>
+
+    <article>
+        <h1>SBS 아카데미 학원</h1>
+    <p>
+        힘차게 그들은 설레는 얼마나 같지 것이다. 이것은 청춘의 동산에는 석가는 있으랴?
+    </p>
+    <P>
+        불어 실현에 보는 것이다. 능히 뜨거운지라, 가치를 봄바람을 피부가 희망의 풍부하게 들어 힘있다. 두손을 시들어 풀밭에 같이, 청춘의 바로 원대하고, 것이다. 인류의 작고 자신과 내려온 든 길을 품으며, 주는 위하여서, 운다.
+
+    </P>
+    </article>
+</section>
+
+
+<footer>
+    <H2>FOOTER</H2>
+</footer>
+<body>
+    
+</body>
+</html>
