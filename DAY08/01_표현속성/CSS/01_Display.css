@@ -1,0 +1,70 @@
+.container{
+    width: 960px;
+    min-height: 400px;
+    margin: 0 auto;
+    border: 3px dashed orange;
+
+}
+
+li{
+     /* display: inline; inline이 적용이되면, width,height이 적용 x */
+    display: inline-block;
+     width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 20px;
+    }
+
+    li:hover{
+        background-color: #ddd;
+        cursor: pointer;
+    }
+
+/* hidden과 none의 차이 */
+
+.none{display: none;}
+/* none은 아에 없에 버린다.
+레이아웃에 영향을 미치치 않는다 */
+.hidden{ visibility: hidden;}
+/*hidden은 자리는 확보는 해준다.
+레이아웃에 영향은 준다. */
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.item img {width: 100%;}
+
+/* flex */
+
+.row{
+    display: flex;
+    /* 아이템들의 줄바꿈 여부를 지정하는 속성 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.col{
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.col img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
